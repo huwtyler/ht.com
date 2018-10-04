@@ -1,0 +1,39 @@
+// Basic Bootstrap Requirements
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer),
+  2: ($spacer * 2),
+  3: $spacer * 3,
+  4: ($spacer * 4),
+  5: ($spacer * 5)
+), $spacers);
+
+$grid-gutter-width: 32px;
+
+$line-height-lg: 1;
+$line-height-sm: 1;
+
+$font-size-lg: ($font-size-base * 2);
+$font-size-sm: ($font-size-base * .5);
+
+$line-height-base: 1.5;
+$headings-line-height: 1;
+
+$h1-font-size:                $font-size-base * 3.5;
+$h2-font-size:                $font-size-base * 3;
+$h3-font-size:                $font-size-base * 2.5;
+$h4-font-size:                $font-size-base * 2;
+$h5-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base;
+
+$display1-size:               2.5rem;
+$display2-size:               3rem;
+$display3-size:               1.5rem;
+$display4-size:               1rem;
+
+$input-btn-padding-y:         .4rem !default;
+$input-btn-padding-x:         1rem !default;

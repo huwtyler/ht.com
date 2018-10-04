@@ -1,0 +1,80 @@
+// Theme modifications
+$primary: #E30B15;
+$font-family-base: 'Poppins', sans-serif;
+$display1-weight: 700;
+$display2-weight: 700;
+$display3-weight: 700;
+$display4-weight: 700;
+$display-line-height: 1;
+$headings-margin-bottom: 1rem;
+
+$btn-border-radius: 2rem;
+$btn-padding-y: .5rem;
+$btn-padding-x: 1.5rem;
+
+$input-border-radius: 2rem;
+$input-border-color: #FFF;
+$input-line-height: 0.9;
+$input-focus-border-color: $primary;
+$input-padding-y: 0.5rem;
+$input-padding-x: 1.5rem;
+$input-color: $primary;
+$input-placeholder-color: $primary;
+
+
+// Bootstrap with 8pt grid
+@import "bootstrap-8pt";
+
+// Bootstrap framework
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/badge";
+
+// Theme specific styles
+.alpha { color: color("custom-color"); }
+
+.with-bar {position: relative;}
+
+.with-bar::after {
+  content: '';
+  width: 100px;
+  height: 8px;
+  background: #FFF;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
+
+.heavy-underline {
+  border-bottom: 3px solid $primary;
+}
+.underline-yellow {
+  border-color: yellow;
+}
+
+html {
+  font-size: 16px;
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+  .display-1 {
+    font-size: 5rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+}
